@@ -1,0 +1,515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="乐的世界happy-youth" />
+<meta name="description" content="出去走走，看看世界" />
+<title> 乐的世界--精彩在路上</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/ico">
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  
+	
+	 <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+    .text-a{
+      margin-left:940px;
+       margin-top: 330px;
+       color: #E6E6E6;
+       width: 620px;
+       position: relative;
+       z-index: 9;
+    }
+    .carousel .container {
+       position: relative;
+       z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      margin: 200px 0 0 auto;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+    
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+
+    #fountainG{
+position:relative;
+width:157px;
+height:19px}
+
+.fountainG{
+position:absolute;
+top:0;
+background-color:#000000;
+width:19px;
+height:19px;
+-moz-animation-name:bounce_fountainG;
+-moz-animation-duration:2.2s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:linear;
+-moz-transform:scale(.3);
+-moz-border-radius:13px;
+-webkit-animation-name:bounce_fountainG;
+-webkit-animation-duration:2.2s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:linear;
+-webkit-transform:scale(.3);
+-webkit-border-radius:13px;
+-ms-animation-name:bounce_fountainG;
+-ms-animation-duration:2.2s;
+-ms-animation-iteration-count:infinite;
+-ms-animation-direction:linear;
+-ms-transform:scale(.3);
+-ms-border-radius:13px;
+-o-animation-name:bounce_fountainG;
+-o-animation-duration:2.2s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:linear;
+-o-transform:scale(.3);
+-o-border-radius:13px;
+animation-name:bounce_fountainG;
+animation-duration:2.2s;
+animation-iteration-count:infinite;
+animation-direction:linear;
+transform:scale(.3);
+border-radius:13px;
+}
+
+#fountainG_1{
+left:0;
+-moz-animation-delay:0.88s;
+-webkit-animation-delay:0.88s;
+-ms-animation-delay:0.88s;
+-o-animation-delay:0.88s;
+animation-delay:0.88s;
+}
+
+#fountainG_2{
+left:20px;
+-moz-animation-delay:1.1s;
+-webkit-animation-delay:1.1s;
+-ms-animation-delay:1.1s;
+-o-animation-delay:1.1s;
+animation-delay:1.1s;
+}
+
+#fountainG_3{
+left:39px;
+-moz-animation-delay:1.32s;
+-webkit-animation-delay:1.32s;
+-ms-animation-delay:1.32s;
+-o-animation-delay:1.32s;
+animation-delay:1.32s;
+}
+
+#fountainG_4{
+left:59px;
+-moz-animation-delay:1.54s;
+-webkit-animation-delay:1.54s;
+-ms-animation-delay:1.54s;
+-o-animation-delay:1.54s;
+animation-delay:1.54s;
+}
+
+#fountainG_5{
+left:79px;
+-moz-animation-delay:1.76s;
+-webkit-animation-delay:1.76s;
+-ms-animation-delay:1.76s;
+-o-animation-delay:1.76s;
+animation-delay:1.76s;
+}
+
+#fountainG_6{
+left:98px;
+-moz-animation-delay:1.98s;
+-webkit-animation-delay:1.98s;
+-ms-animation-delay:1.98s;
+-o-animation-delay:1.98s;
+animation-delay:1.98s;
+}
+
+#fountainG_7{
+left:118px;
+-moz-animation-delay:2.2s;
+-webkit-animation-delay:2.2s;
+-ms-animation-delay:2.2s;
+-o-animation-delay:2.2s;
+animation-delay:2.2s;
+}
+
+#fountainG_8{
+left:137px;
+-moz-animation-delay:2.42s;
+-webkit-animation-delay:2.42s;
+-ms-animation-delay:2.42s;
+-o-animation-delay:2.42s;
+animation-delay:2.42s;
+}
+
+@-moz-keyframes bounce_fountainG{
+0%{
+-moz-transform:scale(1);
+background-color:#000000;
+}
+
+100%{
+-moz-transform:scale(.3);
+background-color:#FFFFFF;
+}
+
+}
+
+@-webkit-keyframes bounce_fountainG{
+0%{
+-webkit-transform:scale(1);
+background-color:#000000;
+}
+
+100%{
+-webkit-transform:scale(.3);
+background-color:#FFFFFF;
+}
+
+}
+
+@-ms-keyframes bounce_fountainG{
+0%{
+-ms-transform:scale(1);
+background-color:#000000;
+}
+
+100%{
+-ms-transform:scale(.3);
+background-color:#FFFFFF;
+}
+
+}
+
+@-o-keyframes bounce_fountainG{
+0%{
+-o-transform:scale(1);
+background-color:#000000;
+}
+
+100%{
+-o-transform:scale(.3);
+background-color:#FFFFFF;
+}
+
+}
+
+@keyframes bounce_fountainG{
+0%{
+transform:scale(1);
+background-color:#000000;
+}
+
+100%{
+transform:scale(.3);
+background-color:#FFFFFF;
+}
+
+}
+    </style>
+
+	<title> </title>
+</head>
+<body>
+	
+  <body>
+
+   <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="index.html">乐的世界  - - <small>出去走看看外面的世界</small></a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a ></a></li>
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">乐在路上<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="庐山游.html">庐山游</a></li>
+                    <li><a href="一个人的旅行.html">一个人的旅行</a></li>
+                    <li><a href="#">厚田沙漠骑行</a></li>
+                    <li><a href="#">南昌-武汉</a></li>
+                    <li><a href="C.html">C程序代码</a></li>
+                  </ul>
+                <li><a></a></li>
+                <li><a href="评论系统.html">评论系统</a></li>
+               <li><a href="love.html">LOVE</a></li>
+                
+                <li><a href="http://lifeshot.tk/">友情网站--生活掠影</a></li>                            
+                
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!-- /.navbar-inner -->
+      </div><!-- /.navbar -->
+    </div> <!-- /.container -->
+  </div><!-- /.navbar-wrapper -->
+<div class="hero-unit">
+
+<h2></h2>
+<!-- Carousel
+    ================================================== -->
+    
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="index1.jpg" class="img-rounded">
+          <div class="row">
+            <div class="text-a">
+            <p class="lead"> <strong>出去走走</strong>，</p>
+            <h4><strong>只为视网膜那驻留片刻的</strong></h4>
+            <h4><strong>精彩。</strong></h4>
+            <div id="fountainG">
+              <div id="fountainG_1" class="fountainG"></div>
+              <div id="fountainG_2" class="fountainG"></div>
+              <div id="fountainG_3" class="fountainG"></div>
+              <div id="fountainG_4" class="fountainG"></div>
+              <div id="fountainG_5" class="fountainG"></div>
+              <div id="fountainG_6" class="fountainG"></div>
+              <div id="fountainG_7" class="fountainG"></div>
+              <div id="fountainG_8" class="fountainG"></div>
+            
+            </div>
+            </div>
+          </div> 
+        </div>
+        
+        <div class="item">
+          <img src="images/love.jpg" class="img-rounded" alt="">
+           <div class="row">
+            <div class="text-a">
+           <h4>步行庐山,</h4>
+           <p><h5>之所以强调步行，</h5><h5>那是因为这步行有特殊的含义</h5>
+           <a class="btn btn-large btn-primary" href="庐山游.html">步行游庐山</a></h3></p>           
+            </div>
+          </div>         
+        </div>
+        
+        <div class="item">
+          <img src="images/index3.jpg" class="img-rounded" alt="">
+           <div class="row">
+            <div class="text-a">
+           <h3>骑行路上,</h3>
+           <p><h4>最欣慰的是
+           </h4><h4>有够好的朋友<a class="btn btn-large btn-primary" href="#">厚田骑行</a></h4></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <img src="images/index2.jpg" class="img-rounded" alt="">
+           <div class="row">
+            <div class="text-a">
+            </div>
+          </div>
+        </div> 
+      </div>
+
+     
+      
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+ 
+  
+</body>
+</html> 

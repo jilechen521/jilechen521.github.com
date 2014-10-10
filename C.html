@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'/>
+        <title>乐的世界--精彩在路上</title>
+        <meta name="keywords" content="评论系统" />
+        <meta name="description" content="出去走走看看外面的世界">
+        <meta name="robots" content="all,index"/> 
+        <link rel="shortcut icon" href="favicon.ico" type="image/ico">
+        <link rel="stylesheet" href="css/about.css">
+         <link rel="stylesheet" href="css/gh-fork-ribbon.css" />
+        <!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+<style>
+     /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+  </style>
+  </head>
+  <body>
+
+    
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            
+            <a class="brand" href="index.html">乐的世界  - - <small>出去走看看外面的世界</small></a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a ></a></li>
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">乐在路上<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="庐山游.html">庐山游</a></li>
+                    <li><a href="一个人的旅行.html">一个人的旅行</a></li>
+                    <li><a href="#">厚田沙漠骑行</a></li>
+                    <li><a href="#">南昌-武汉</a></li>
+                    <li><a href="C.html">C程序代码</a></li>
+                  </ul>
+                <li><a></a></li>
+                <li><a href="评论系统.html">评论系统</a></li>
+                
+                <li><a href="love.html">LOVE</a></li>
+                <li><a href="http://lifeshot.tk/">友情网站--生活掠影</a></li>                            
+                
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!-- /.navbar-inner -->
+      </div><!-- /.navbar -->
+    </div> <!-- /.container -->
+  </div><!-- /.navbar-wrapper -->
+
+   <div class="hero-unit">
+    <p></p>
+   <p align="left"><br>
+              #include&lt;stdio.h&gt;<br>
+              #include&lt;math.h&gt;<br>
+              #include&lt;stdlib.h&gt;<br>
+              int main()<br>
+              {<br>
+              void average1();<br>
+              void average2();<br>
+              void average3();<br>
+              void daima();<br>
+              int i,n;<br>
+              for(i=0;;i++)<br>
+              {<br>
+              printf(&quot;***********************************************************************\n&quot;);<br>
+              printf(&quot;                         大学物理实验数据处理\n&quot;);<br>
+              printf(&quot;按下对应数字，选择处理方法\n&quot;);<br>
+              printf(&quot;1、多次测量的平均值，A类不确定度的计算\n&quot;);<br>
+              printf(&quot;2、逐差法计算平均值。\n&quot;);<br>
+              printf(&quot;3、最小二乘法\n&quot;);<br>
+              printf(&quot;4、查看本程序的C代码心代码，由陈积乐整理~\n&quot;);<br>
+              printf(&quot;***********************************************************************\n\n&quot;);<br>
+              for(i=0;;i++)<br>
+              {<br>
+              printf(&quot;请输入需要执行的数据处理方法：&quot;);<br>
+              scanf(&quot;%d&quot;,&amp;n);<br>
+              if(n==1) {average1();break;}<br>
+              else if(n==2){average2();break;}<br>
+              else if(n==3){average3();break;}<br>
+              else if(n==4){daima();break;}<br>
+              else printf(&quot;只能输入1、2、3哦~\n&quot;);<br>
+              }<br>
+              }<br>
+              }</p>
+            <p align="left">void average1()<br>
+              {<br>
+              int h,j;<br>
+              float s=0,juedui=0,average,a[101];<br>
+              printf(&quot;\n现在是多次测量求平均值、A类不确定度计算\n&quot;);<br>
+              printf(&quot;数据组数n(不超过100):&quot;);<br>
+              scanf(&quot;%d&quot;,&amp;h);<br>
+              for(j=1;j&lt;=h;j++)<br>
+              {<br>
+              printf(&quot;请输入第%d个数&quot;,j);<br>
+              scanf(&quot;%f&quot;,&amp;a[j]);<br>
+              }<br>
+              for(j=1;j&lt;=h;j++)<br>
+              s=s+a[j];<br>
+              average=s/h;<br>
+              printf(&quot;平均值=%f\n&quot;,average);</p>
+            <p align="left"> s=0;<br>
+              for(j=1;j&lt;=h;j++)<br>
+              s=s+(a[j]-average)*(a[j]-average);<br>
+              s=sqrt(s/(h-1));<br>
+              printf(&quot;A类不确定度为：%.5f\n&quot;,s);<br>
+              s=0;<br>
+              for(j=1;j&lt;=h;j++)<br>
+              juedui=juedui+fabs(a[j]-average);<br>
+              printf(&quot;算术平均值=%f\n&quot;,juedui);<br>
+              printf(&quot;相对误差=%f\n&quot;,juedui/average*100);<br>
+              }</p>
+            <p align="left">void average2()<br>
+              {<br>
+              int num,o,half;<br>
+              float sum=0,averagei,b[101];<br>
+              printf(&quot;\n现在是逐差法计算平均值\n&quot;);<br>
+              printf(&quot;数据组数n（应为偶数，若不是，请删除一组数据后再输入)&quot;);<br>
+              scanf(&quot;%d&quot;,&amp;num);<br>
+              for(o=1;o&lt;=num;o++)<br>
+              {<br>
+              printf(&quot;请输入第%d个数&quot;,o);<br>
+              scanf(&quot;%f&quot;,&amp;b[o]);<br>
+              }<br>
+              half=num/2;<br>
+              for(o=1;o&lt;=half;o++)<br>
+              sum=sum+b[o+half]-b[o];<br>
+              averagei=sum/(half*half);<br>
+              printf(&quot;其平均值为:%f&quot;,averagei);<br>
+              }</p>
+            <p align="left">void average3()<br>
+              {<br>
+              int numi,c;<br>
+              float d,k,average_x=0,average_y=0,aver2_x=0,average_xy=0,x[101],y[101];<br>
+              printf(&quot;\n现在进行的是最小二乘法处理数据\n&quot;);<br>
+              printf(&quot;数据组数n:(不超过100组）&quot;);<br>
+              scanf(&quot;%d&quot;,&amp;numi);<br>
+              for(c=1;c&lt;=numi;c++)<br>
+              {<br>
+              printf(&quot;请输入第%d个自变量X%d的值&quot;,c,c);<br>
+              scanf(&quot;%f&quot;,&amp;x[c]);<br>
+              }<br>
+              for(c=1;c&lt;=numi;c++)<br>
+              {<br>
+              printf(&quot;请输入第%d个应变量的Y%d的值&quot;,c,c);<br>
+              scanf(&quot;%f&quot;,&amp;y[c]);<br>
+              }<br>
+              for(c=1;c&lt;=numi;c++)<br>
+              average_x=average_x+x[c];<br>
+              average_x=average_x/numi;<br>
+              for(c=1;c&lt;=numi;c++)<br>
+              average_y=average_y+y[c];<br>
+              average_y=average_y/numi;<br>
+              for(c=1;c&lt;=numi;c++)<br>
+              aver2_x=aver2_x+x[c]*x[c];<br>
+              aver2_x=aver2_x/numi;<br>
+              for(c=1;c&lt;=numi;c++)<br>
+              average_xy=average_xy+x[c]*y[c];<br>
+              average_xy=average_xy/numi;<br>
+              k=(average_x*average_y-average_xy)/(average_x*average_x-aver2_x);<br>
+              d=average_y-k*average_x;<br>
+              printf(&quot;X的平均值=%f\n&quot;,average_x);<br>
+              printf(&quot;Y的平均值=%f\n&quot;,average_y);<br>
+              printf(&quot;X*Y的平均值=%f\n&quot;,average_xy);<br>
+              printf(&quot;X的平方的平均值=%f\n&quot;,aver2_x);<br>
+              printf(&quot;自变量X的值为&quot;);<br>
+              for(c=1;c&lt;=numi;c++)<br>
+              printf(&quot;%f&quot;,x[c]);<br>
+              printf(&quot;\n应变量Y的值为&quot;);<br>
+              for(c=1;c&lt;=numi;c++)<br>
+              printf(&quot;%f&quot;,y[c]);<br>
+              printf(&quot;\n计算结果：斜率k=%f\n&quot;,k);<br>
+              printf(&quot;\n计算结果：截距b=%f\n&quot;,d);<br>
+              }</p>
+            <p align="left">void daima()<br>
+              {<br>
+              system(&quot;start http://jlchen.tk/C.html&quot;);<br>
+              }</p>
+    
+    <div >
+      <p >&nbsp; </p>
+      <h2 ><a href="http://pan.baidu.com/s/1i3wrdPF">点击下载程序</a></h2>
+    </div>
+ <p class="STYLE4">&nbsp;</p>
+ <p>&nbsp;</p>
+</div><script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+ 
+ 
+  
+  </body>
+</html>
